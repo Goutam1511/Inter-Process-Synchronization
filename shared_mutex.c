@@ -1,3 +1,15 @@
+/* Compile : gcc shared_mutex.c -o shared_mutex -lrt
+ * Run in TERMINAL 1
+ * [gbose@seadev20:~/Inter-Process-Synchronization$]./mutex
+ *  Mutex Id : 3
+ *  Mutex : 0x7fc9b91e9000
+ *  Acquired Lock now sleeping...
+ * Run in TERMINAL 2
+ * [gbose@seadev20:~/Inter-Process-Synchronization$]./mutex
+ *  Mutex Id : 3
+ *  Mutex : 0x7f8080c0a000
+ *  Cannot acquire Lock. Some instance might be already running
+ */
 #include <stdio.h>
 #include <stdlib.h>
 #include <unistd.h>
